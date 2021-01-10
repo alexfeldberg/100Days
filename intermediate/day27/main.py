@@ -14,8 +14,6 @@ window = Tk()
 window.title("Mile to Km Converter")
 window.minsize(width=300, height=150)
 window.config(padx=20, pady=20)
-anchor_labor = Label()
-anchor_labor.grid(column=0, row=0)
 
 # Entry
 usr_input = Entry(width=5)
