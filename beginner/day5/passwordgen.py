@@ -1,4 +1,5 @@
 import random
+import pyperclip
 
 def passwordgen():
 
@@ -26,6 +27,8 @@ def passwordgen():
 	random.shuffle(l)
 	final = "".join(l)
 
-	print(f"Your password is: {final}")
 
+	print(f"Your password is: {final}")
+	pyperclip.copy(final)
+	
 passwordgen()
