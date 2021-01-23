@@ -4,9 +4,9 @@ from twilio.rest import Client
 
 MY_LAT = 40.726390  # Your latitude
 MY_LONG = -73.861480  # Your longitude
-api_key = "7ee103a5337bd67ccbce5f1ca9090101"
+api_key = os.environ.get("OWM_API_KEY")
 account_sid = "ACe4331a112d51a273a84d5eff6008cfac"
-auth_token = "96c190f4e3e03495340eb3acfb4767e7"
+auth_token = os.environ.get("AUTH_TOKEN")
 
 weather_parameters = {
     "lat": MY_LAT,
